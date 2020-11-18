@@ -76,9 +76,14 @@ export default {
   axios.post('http://localhost:24434/v1/api/user/login',userInfo)
 .then(res=>{
     if (res.data.success) {
-         this.$store.commit('login_success',res)
-        this.$router.push('/homeboard')
-    console.log(res.data.message)
+                const refreshToken = res.data.data.refreshToken;
+                const token = res.data.data.token;
+                const user = res.data.data.user;
+                localStorage.setItem('token',token);
+                localStorage.setItem('refreshToken',refreshToken);
+                axios.defaults.headers.common["Authorization"] = token;
+                this.$router.push('/homeboard')
+                this.$store.commit('login_success',res)
     }
 }).catch(e=>{
    this.$store.commit("login_error",e.response)

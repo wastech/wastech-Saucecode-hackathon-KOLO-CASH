@@ -7,11 +7,16 @@ export default createStore({
     token:localStorage.getItem('token') || '',
         success:null,
         error:null,
+        user:{},
+        status:'',
 
   },
   getters:{
+    isLoggedIn: state=>!!state.token ,
     error: state=>state.error,
-    success: state=>state.success
+    success: state=>state.success,
+    user: state=>state.user,
+    token: state=>state.token
   },
   mutations: {
     async signUp({commit},user) {
@@ -46,12 +51,16 @@ export default createStore({
   login_success(state,res){
     state.status = 'success'
     state.error=null
+    state.token = res.data.data.token
+    state.user = res.data.data.user
     state.success = res.data.message
 },
 login_error(state,res){
     state.status = 'failure'
     state.error=res.data.message
     state.success = ''
-}
+},
+
+
   }
 })
