@@ -125,7 +125,7 @@ export default {
 .then(res=>{
     if (res.data.success) {
          this.$store.commit('register_success',res)
-        this.$router.push('/login')
+        this.$router.push('/redirectpage')
     console.log(res.data.message)
     }
 }).catch(e=>{
