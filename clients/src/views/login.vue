@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm">
-        <img src="@/assets/2.png" alt="" />
+        <img src="@/assets/9.png" alt="" />
       </div>
       <div class="col-sm">
         <div class="title">
-          <h1>Welcome Back <br>  Sign to Continue</h1>
+          <h1>Welcome Back,<br>  Sign to Continue</h1>
 
           <form @submit.prevent="SignIn">
             <div class="form-group row mt-2">
@@ -34,11 +34,11 @@
               </div>
             </div>
           <div class="forgot">
-            <h2><code>forgot password </code></h2>
+            <b>forgot password </b>
           </div>
 
             <div class="d-flex justify-content-around">
-              <h3>don't have an account? <code>signUp</code> </h3>
+              <h3>don't have an account? <span>signUp</span> </h3>
               <button type="submit" class="btn btn-secondary btn-lg btn-lg">
                 login
               </button>
@@ -99,6 +99,17 @@ export default {
   color: #fff;
   background-color: #640064 !important;
   border-color: #6c757d;
+}
+h1{
+  color: #640064;
+  font-weight: 900;
+}
+.forgot{
+  margin-bottom: 1em;
+   color: #640064;
+}
+span{
+  color: #640064;
 }
 input {
   padding: 1.5em;

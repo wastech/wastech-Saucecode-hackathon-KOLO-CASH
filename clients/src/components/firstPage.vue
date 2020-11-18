@@ -2,7 +2,7 @@
   <div class="container ">
     <div class="container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-6 ">
       <h1>{{title}}</h1>
        <div class="text">
       <p class="paragraph">
@@ -15,7 +15,7 @@
    
     <div class="col-sm-6">
      <div class="image">
-       <img src="@/assets/3.png" alt="">
+       <img src="@/assets/7.png" alt="">
      </div>
     </div>
     </div>
@@ -46,6 +46,7 @@ h1{
   font-weight: 700;
  margin-bottom: 0.6em;
   line-height: 61.6px;
+  margin-top: 2em;
   color: #640064 !important;
 }
 .container{
@@ -65,7 +66,6 @@ p{
 img{
   max-width: 100%;
   width: 936px;
-height: 601px;
 left: 514px;
 top: 219px;
 object-fit: cover;

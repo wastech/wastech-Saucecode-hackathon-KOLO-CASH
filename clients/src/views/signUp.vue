@@ -76,12 +76,12 @@
               </div>
             </div>
 
-            <div class="d-flex justify-content-around">
-              <h3>got an account? <code>Login</code></h3>
+            <div class="d-flex justify-content-around mt-2">
+              <h5>got an account? <code>Login</code></h5>
               <!-- <button type="button" class="btn btn-secondary btn-lg btn-lg">
               </button> -->
                 <button  type="submit" class="btn btn-secondary btn-lg btn-lg">
-                signup for free
+                continue
                   </button>
 
             </div>
@@ -125,7 +125,7 @@ export default {
 .then(res=>{
     if (res.data.success) {
          this.$store.commit('register_success',res)
-        this.$router.push('/login')
+        this.$router.push('/redirectpage')
     console.log(res.data.message)
     }
 }).catch(e=>{
@@ -139,7 +139,7 @@ export default {
 <style scoped>
 .container {
   padding-top: 6em;
-  padding-bottom: 6em;
+  padding-bottom: 10em;
   background-color: #e5e5e5 !important;
 }
 .btn-secondary {

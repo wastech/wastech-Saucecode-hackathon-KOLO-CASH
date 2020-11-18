@@ -3,7 +3,7 @@
  <div  class="container-fluid">
   <div class="row">
     <div class="col">
-      <h1>myBank</h1>
+      <h1>myKollo</h1>
     </div>
     <div class="col">
       <h3>Start a Goal</h3>
@@ -24,8 +24,12 @@
 
 <style  scoped>
 .main{
-  background-color: #640064 !important;
+  background-color: #2C022C !important;
   padding: 3em;
   color: white;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 </style>
