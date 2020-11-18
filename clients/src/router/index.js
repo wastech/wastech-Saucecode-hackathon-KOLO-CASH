@@ -4,6 +4,7 @@ import signUp from '../views/signUp.vue'
 import login from '../views/login.vue'
 import About from '../views/About.vue'
 import homeBoard from "../views/homeBoard.vue";
+import redirectPage from "../views/redirectPage.vue";
 
 const routes = [
   {
@@ -15,6 +16,11 @@ const routes = [
     path: "/homeboard",
     name: "homeboard",
     component: homeBoard,
+  },
+  {
+    path: "/redirectpage",
+    name: "redirectpage",
+    component: redirectPage,
   },
   {
     path: "/login",
