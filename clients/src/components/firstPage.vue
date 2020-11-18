@@ -9,8 +9,11 @@
         {{text}}
       </p>
     </div>
-      <button type="button" class="btn btn-outline-secondary" >login</button>
-<button type="button" class="btn btn-outline-secondary btn-lg btn-lg" >signup for free</button>
+      <button type="button" class="btn btn-outline-secondary"  >
+        <a href="login"> Login</a>
+        </button>
+<button type="button" class="btn btn-outline-secondary btn-lg btn-lg" >
+  <a href="signup">Signup For Free </a></button>
   </div>
    
     <div class="col-sm-6">
@@ -28,8 +31,8 @@
 export default {
   data(){
     return{
-      title:"save for a particular purpose",
-      text:"In the dist/ directory of the npm package you will find many different builds of Vue.js. Here is an overview of which dist file should be used depending on the use-case"
+      title:"A better way to manage your income",
+      text:"Kolocash keeps you at peace when you  sell goods on credit,  Loan a friend or dared to fund a project.With an impressive interest rates.Your cash is never out of Your Kollo 😊"
     }
   }
 }
@@ -42,7 +45,7 @@ button{
     padding-left: 3em;
 }
 h1{
-  font-size: 3.5em;
+  font-size: 2.8em;
   font-weight: 700;
  margin-bottom: 0.6em;
   line-height: 61.6px;

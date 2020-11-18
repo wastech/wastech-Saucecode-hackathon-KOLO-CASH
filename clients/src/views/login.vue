@@ -38,7 +38,7 @@
           </div>
 
             <div class="d-flex justify-content-around">
-              <h3>don't have an account? <span>signUp</span> </h3>
+              <h3>don't have an account? <span><a href="signup">signup  </a></span> </h3>
               <button type="submit" class="btn btn-secondary btn-lg btn-lg">
                 login
               </button>
@@ -119,7 +119,9 @@ span{
 input {
   padding: 1.5em;
   margin-top: 0.6em;
+    border-color: #640064 !important;
 }
+
 img{
   height: 100%;
   width: 100%;

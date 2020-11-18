@@ -26,9 +26,9 @@ export default {
     return{
       items:[
         {title:"Choose a Goal", text:'With the use of mykollo ID. Kollocash ensures that money set to be borrowed to a Kollo user is tracked and retrieved at the set time. You are never at lost when a borrower do not pay at the set time. Keep calm while you loan to grow your kollo cash'},
-        {title:"Choose a Goal", text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'},
-        {title:"Choose a Goal", text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'},
-        {title:"Choose a Goal", text:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'},
+        {title:"Meet Expense", text:'Never go out of budget! With Kollocash, you can set expenses goals with your income. Kollocash helps users meet their target through a flexible saving plan aligned with their income.'},
+        {title:"Sell on Credit", text:'Business transaction  just got easier with Kollocash.  You can keep a good track on all your incoming credits or outgoing debits when you make use of Kollocash track my payments.'},
+        {title:"Fund mykollo", text:'You can fundraise for a project , ask for gifts or request for payment with the use of fundmykollo link.'},
 
 
       

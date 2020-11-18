@@ -77,7 +77,7 @@
             </div>
 
             <div class="d-flex justify-content-around mt-2">
-              <h5>got an account? <code>Login</code></h5>
+              <h5>got an account? <a href="login"><code> login</code></a></h5>
               <!-- <button type="button" class="btn btn-secondary btn-lg btn-lg">
               </button> -->
                 <button  type="submit" class="btn btn-secondary btn-lg btn-lg">
@@ -150,6 +150,8 @@ export default {
 input {
   padding: 2em;
   margin-top: 0.6em;
+  border-color: #640064 !important;
+
 }
 img{
   height: 100%;

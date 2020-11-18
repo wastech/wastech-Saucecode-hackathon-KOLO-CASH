@@ -5,6 +5,8 @@ import login from '../views/login.vue'
 import About from '../views/About.vue'
 import homeBoard from "../views/homeBoard.vue";
 import redirectPage from "../views/redirectPage.vue";
+import Account from "../views/Account.vue";
+import accountChecked from "../views/accountChecked.vue";
 import store from '../store'
 
 
@@ -19,18 +21,29 @@ const routes = [
     name: "homeboard",
     component: homeBoard,
   },
+  ,
+  {
+    path: "/accountchecked",
+    name: "accountchecked",
+    component: accountChecked,
+  },
   {
     path: "/redirectpage",
     name: "redirectpage",
     component: redirectPage,
-    meta:{
-      requiresAuth:true
-    }
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: "/login",
     name: "login",
     component: login,
+  },
+  {
+    path: "/account",
+    name: "account",
+    component: Account,
   },
   {
     path: "/signup",

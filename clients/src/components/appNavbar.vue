@@ -2,7 +2,7 @@
 <div class="hello">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand">
-      <router-link to="/">koll cash</router-link>
+      <router-link to="/">myKollo</router-link>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,15 @@ button{
   padding-right: 3em;
     padding-left: 3em;
 }
+.navbar-brand{
+  font-weight: bolder;
+  font-size: xxx-large;
+ 
+}
 
+#nav a{
+ color: #640064;
+}
 button:hover{
   
     background-color: #640064 !important;

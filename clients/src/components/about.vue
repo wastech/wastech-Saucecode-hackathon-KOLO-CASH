@@ -14,11 +14,10 @@
         <div class="text">
           <p>
           
-            that includes both the compiler and the runtime so it supports
-            compiling templates on the fly. vue.runtime.global.js contains only
-            the runtime and requires templates to be pre-compiled during a build
-           
-            files for production.</p>
+           Selling on credit or loaning out my cash to friends as never
+been a a good option because I have to always deal with the
+headache of timely retrievals and reminder.
+Kollocash has made transaction easier , saver and peaceful. </p>
         </div>
       </div>
     </div>
