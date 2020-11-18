@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 let config = require('./parameter');
 
-const uri = config.localdatabaseURI
+const uri = config.atlasdatabaseURI
 
 const dbOptions = {
     useNewUrlParser: true,
@@ -13,7 +13,7 @@ const dbOptions = {
  exports.database=()=>{
     mongoose
             .connect(uri, dbOptions)
-            .then(() => console.log(`{Connected to database}`,config.localdatabaseURI))
-            .catch((error) => console.log(":: {Couldn't connect to database} "));
+            .then(() => console.log(`Connected to database `))
+            .catch((error) => console.log(":: {Couldn't connect to databases} "));
 }
 
