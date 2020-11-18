@@ -38,4 +38,23 @@ const router = createRouter({
   routes
 })
 
+// router.beforeEach((to,from,next)=>{
+//   if(to.matched.some(record=>record.meta.requiresAuth)){
+//     if(!store.getters.isLoggedIn){
+//         next("/login")
+    
+//     }else{
+//         next();
+//     }
+//     }else if(to.matched.some(record=>record.meta.requiresGuest)){
+//       if(store.getters.isLoggedIn){
+//           next("/order")
+      
+//       }else{
+//           next();
+//       }
+//       }
+
+// })
+
 export default router
