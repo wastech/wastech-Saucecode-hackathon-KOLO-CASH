@@ -10,7 +10,7 @@
       </p>
     </div>
       <button type="button" class="btn btn-outline-secondary" >login</button>
-<button type="button" class="btn btn-secondary btn-lg btn-lg" >signup for free</button>
+<button type="button" class="btn btn-outline-secondary btn-lg btn-lg" >signup for free</button>
   </div>
    
     <div class="col-sm-6">
@@ -57,8 +57,10 @@ p{
 }
 .btn-secondary {
     color: #fff;
-    background-color: #640064 !important;
     border-color: #6c757d;
+}
+.btn-outline-secondary:hover{
+  background-color: #640064;
 }
 img{
   max-width: 100%;

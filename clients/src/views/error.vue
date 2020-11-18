@@ -1,8 +1,14 @@
 <template>
     <div >
 
+<div class="alert alert-danger alert-dismissible fade show" role="alert" v-if="error">
+  <h1 class="error">{{error}}</h1>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-{{error}}
+
 
 
     </div>
@@ -31,6 +37,9 @@ export default {
 </script>
 
 <style scoped>
+.error{
+    text-align: center;
+}
 .red{
    border-radius: 5px;
     font-size: 3vh;

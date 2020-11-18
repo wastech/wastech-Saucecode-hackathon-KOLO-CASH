@@ -38,10 +38,12 @@
           </div>
 
             <div class="d-flex justify-content-around">
-              <h3>don't have an account? </h3>
+              <h3>don't have an account? <code>signUp</code> </h3>
               <button type="submit" class="btn btn-secondary btn-lg btn-lg">
-                signup for free
+                login
               </button>
+
+              
             </div>
           </form>
         </div>
@@ -75,7 +77,7 @@ export default {
 .then(res=>{
     if (res.data.success) {
          this.$store.commit('login_success',res)
-        this.$router.push('/dashboard')
+        this.$router.push('/homeboard')
     console.log(res.data.message)
     }
 }).catch(e=>{

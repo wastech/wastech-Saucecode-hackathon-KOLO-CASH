@@ -3,29 +3,35 @@ import Home from '../views/Home.vue'
 import signUp from '../views/signUp.vue'
 import login from '../views/login.vue'
 import About from '../views/About.vue'
+import homeBoard from "../views/homeBoard.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/login',
-    name: 'login',
-    component: login
+    path: "/homeboard",
+    name: "homeboard",
+    component: homeBoard,
   },
   {
-    path: '/signup',
-    name: 'signup',
-    component: signUp
+    path: "/login",
+    name: "login",
+    component: login,
   },
   {
-    path: '/about',
-    name: 'About',
-    component:About
-  }
-]
+    path: "/signup",
+    name: "signup",
+    component: signUp,
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: About,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
