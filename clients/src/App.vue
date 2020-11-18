@@ -16,7 +16,7 @@ import Error from "@/views/error"
 
 export default {
   components:{
-    Success,Error
+    Success,Error,appNavbar
 
   }
   
