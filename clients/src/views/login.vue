@@ -8,9 +8,7 @@
         <div class="title">
           <h1>Welcome Back <br>  Sign to Continue</h1>
 
-          <form>
-           
-
+          <form @submit.prevent="SignIn">
             <div class="form-group row mt-2">
               <div class="col-sm-12">
                 <input
@@ -18,6 +16,8 @@
                   class="form-control form-control-lg"
                   id="inputEmail3"
                   placeholder="email address"
+                   v-model="email"
+
                 />
               </div>
             </div>
@@ -29,6 +29,7 @@
                   class="form-control form-control-lg"
                   id="inputPassword3"
                   placeholder="password"
+                   v-model="password"
                 />
               </div>
             </div>
@@ -38,7 +39,7 @@
 
             <div class="d-flex justify-content-around">
               <h3>don't have an account? </h3>
-              <button type="button" class="btn btn-secondary btn-lg btn-lg">
+              <button type="submit" class="btn btn-secondary btn-lg btn-lg">
                 signup for free
               </button>
             </div>
@@ -48,6 +49,44 @@
     </div>
   </div>
 </template>
+<script>
+import {mapActions} from 'vuex'
+import Api from '../config/Api'
+import axios from 'axios'
+
+export default {
+  data(){
+    return{
+      email:'',
+      password:'',
+    }
+    },
+    
+    methods:{
+        ...mapActions(['signUp']),
+        SignIn(){
+            let userInfo={
+                password:this.password,
+                email:this.email
+            }
+
+  // this.signUp(userInfo)
+  axios.post('http://localhost:24434/v1/api/user/login',userInfo)
+.then(res=>{
+    if (res.data.success) {
+         this.$store.commit('login_success',res)
+        this.$router.push('/dashboard')
+    console.log(res.data.message)
+    }
+}).catch(e=>{
+   this.$store.commit("login_error",e.response)
+})
+            },
+            
+  }
+}
+</script>
+
 <style scoped>
 .container {
   padding-top: 6em;

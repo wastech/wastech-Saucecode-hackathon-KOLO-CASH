@@ -1,6 +1,8 @@
 <template>
   <div id="nav">
    <appNavbar/>
+  <Success  />
+  <Error  />
     <router-view/>
     <footerApp/>
   </div>
@@ -9,10 +11,13 @@
 <script>
 import appNavbar from "@/components/appNavbar"
 import footerApp from "@/components/footerApp"
+import Success from "@/views/success"
+import Error from "@/views/error"
+
 export default {
   components:{
-    appNavbar,
-    footerApp
+    Success,Error
+
   }
   
 }
