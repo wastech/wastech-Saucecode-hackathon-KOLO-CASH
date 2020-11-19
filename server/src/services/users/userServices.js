@@ -36,8 +36,8 @@ class userServices{
                 }
    const token = jwt.sign(payload, process.env.jwtSecret, {expiresIn: config.accessTokenexpires_expiresIn});
    const  localVerificationlink =` http://localhost:24434/v1/api/user/verifyAccount/${token}`;
-   const verificationlink =  `https://mykolo.com/v1/api/user/verifyAccount/${token}`;
- console.log(localVerificationlink)
+   const verificationlink =  `https://${req.hostname}/v1/api/user/verifyAccount/${token}`;
+ console.log(verificationlink)
  await new Email(req.body, verificationlink).verify_email();
  await new Email(req.body, localVerificationlink).verify_email();
 

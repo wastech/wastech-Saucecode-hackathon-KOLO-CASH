@@ -121,11 +121,11 @@ export default {
             }
 
   // this.signUp(userInfo)
-  axios.post('http://localhost:24434/v1/api/user/register',userInfo)
+  axios.post('/v1/api/user/register',userInfo)
 .then(res=>{
     if (res.data.success) {
          this.$store.commit('register_success',res)
-        this.$router.push('/redirectpage')
+        // this.$router.push('/redirectpage')
     console.log(res.data.message)
     }
 }).catch(e=>{
