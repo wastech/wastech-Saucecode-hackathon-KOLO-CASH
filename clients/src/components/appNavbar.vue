@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand">
       <router-link to="/">KolloCash</router-link>
@@ -48,7 +48,7 @@ ul {
   color: black;
   font-weight: bolder;
   padding: 2rem;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 nav{
@@ -65,7 +65,7 @@ button{
 }
 .navbar-brand{
   font-weight: bolder;
-  font-size: xxx-large;
+  font-size: large;
  
 }
 

@@ -2,7 +2,7 @@
     <div>
        
       <div class="alert alert-success alert-dismissible fade show" role="alert" v-if="success">
-  <h1 class="error">{{success}}</h1>
+  <h3 class="success">{{success}}</h3>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -35,14 +35,13 @@ export default {
 </script>
 
 <style scoped>
-.blue{
-    border-radius: 5px;
-    font-size: 3vh;
-    margin: 20px ;
-    text-transform: uppercase;
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+h3{
+    font-size: small;
 }
-div.red{
-    margin: 0px;
-    padding: opx;
 }
 </style>

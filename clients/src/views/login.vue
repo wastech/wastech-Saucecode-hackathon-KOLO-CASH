@@ -6,7 +6,7 @@
       </div>
       <div class="col-sm">
         <div class="title">
-          <h1>Welcome Back,<br>  Sign to Continue</h1>
+          <h4>Welcome Back,<br>  Sign to Continue</h4>
 
           <form @submit.prevent="SignIn">
             <div class="form-group row mt-2">
@@ -37,7 +37,7 @@
             <h3>forgot password </h3>
           </div>
 
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-between">
               <h5>don't have an account? <span><a href="signup">signup  </a></span> </h5>
               <button type="submit" class="btn btn-secondary btn-lg btn-lg">
                 login
@@ -85,10 +85,11 @@ export default {
                 axios.defaults.headers.common["Authorization"] = token;
                 this.$router.push('/homeboard')
                 this.$store.commit('login_success',res)
+                
     }
 }).catch(e=>{
    this.$store.commit("login_error",e.response)
-   this.$store.dispatch('setToken', response.data.token)
+   
 })
             },
             
@@ -98,7 +99,7 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 6em;
+  padding-top: 2em;
   
   background-color: #e5e5e5 !important;
 }
@@ -107,29 +108,31 @@ export default {
   background-color: #640064 !important;
   border-color: #6c757d;
 }
-h1{
+h4{
   color: #640064;
   font-weight: 900;
+  
 }
 .d-flex{
-  margin-top: 5em;
+  margin-top: 1.5em;
 }
 .forgot{
   margin-bottom: 1em;
    color: #640064;
+   font-size: medium;
 }
 #nav a{
   color: #640064;
-  font-size: 2em;
+  font-size: 1em;
 }
 input {
-  padding: 1.5em;
+  padding: 0.2em;
   margin-top: 0.6em;
     border-color: #640064 !important;
 }
 
 img{
-  height: 100%;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -140,6 +143,12 @@ img{
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: #e5e5e5 !important;
+}
+img{
+  height: 300px;
+  width: 100%;
+  display: none;
+  object-fit: cover;
 }
 input {
   padding: 1em;

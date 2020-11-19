@@ -1,9 +1,9 @@
 <template>
 <div class="main">
- <div  class="container-fluid">
+ <div  class="container">
   <div class="row">
     <div class="col">
-      <h1>KolloCash</h1>
+      <h3>KolloCash</h3>
     </div>
     <div class="col">
       <h5>StartaGoal</h5>

@@ -6,7 +6,7 @@
           <h1>
             <span class="mr-5"
               ><svg
-                width="1em"
+                width="0.5em"
                 height="1em"
                 viewBox="0 0 16 16"
                 class="bi bi-text-indent-left"
@@ -214,7 +214,7 @@ h1 {
   padding: 2em;
 }
 h5 {
-  margin-top: 6em;
+  margin-top: 3em;
   text-align: center;
 }
 .started h1 {

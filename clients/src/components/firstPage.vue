@@ -10,22 +10,23 @@
       </p>
     </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col-4">
       <button type="button" class="btn  btn-lg btn-block"  >
         <a href="login"> Login</a>
         </button>
       </div>
-        <div class="col-6">
+        <div class="col-4">
 <button type="button" class="btn  btn-lg btn-block" >
   <a href="signup">Signup For Free </a></button>
   </div>
   </div>
    
    </div>
-   
+   <div class="col-sm-6 ">
      <div class="image">
        <img src="@/assets/7.png" alt="">
      </div>
+   </div>
    
     
     </div>
@@ -46,31 +47,31 @@ export default {
 </script>
 <style  scoped>
 button{
-  padding: 0.7em;
+ 
   margin: 1em;
-  padding-right: 3em;
-    padding-left: 3em;
+  padding-right: 1em;
+    padding-left: 1em;
 }
-.col-6{
+.col-4{
   text-align: left;
   padding-left: 0em;
 }
 h1{
-  font-size: 2.8em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 900;
  margin-bottom: 0.6em;
-  line-height: 61.6px;
-  margin-top: 2em;
+  line-height: 30.6px;
+  margin-top: 1em;
   color: #640064 !important;
 }
 .container{
-  margin-top: 5em;
+  margin-top: 2em;
 }
 .btn{
   background-color: white;
 }
 p{
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 100;
 }
 .btn-secondary {
@@ -90,9 +91,11 @@ a{
 }
 img{
   max-width: 100%;
-  width: 90%;
-object-fit: cover;
+  width: 100%;
+height: 400px;
+object-fit: contain;
 }
+
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -128,8 +131,9 @@ p{
 img{
   max-width: 100%;
   width: 100%;
-  
-object-fit: cover;
+  height: 200px;
+  display: none;
+object-fit: contain;
 }
 *, ::after, ::before {
      box-sizing:inherit;

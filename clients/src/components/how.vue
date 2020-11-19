@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-  <div class="container-fluid">
+  <div class="container">
     <div class="header">
       <h1>Why KolloCash?</h1>
     </div>
@@ -38,39 +38,37 @@ export default {
 </script>
 
 <style  scoped>
-.container-fluid{
-  margin-top: 5em;
-  max-width: 100%;
-   margin-bottom: 5em;
-    padding-bottom: 7em;
- 
-}
+
 .shadow {
-  padding: 4em;
+  padding: 1.3em;
   background-color: white;
   
 }
 p{
-  font-size: large;
+  font-size: medium;
 }
 .col-sm-6{
   margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 
 .main{
- background-color:   rgba(255, 249, 255, 0.85); ;
+ background-color:   rgba(255, 249, 255, 0.85); 
+ margin-top: 3em;
+   margin-bottom: 4em;
 }
 .title{
   color:#640064;
    margin-bottom: 0.5em;
    font-weight: bolder;
+   font-size: medium;
 
 }
 h1{
   color:#640064;
-  padding-top: 3em;
-  margin-bottom: 2em;
+  padding-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
   font-weight: bolder;
   
@@ -83,6 +81,15 @@ h1{
    margin-bottom: 2em;
     padding-bottom: 2em;
  
+}
+.main{
+ background-color:   rgba(255, 249, 255, 0.85); 
+ margin-top: 2em;
+   margin-bottom: 2em;
+}
+.col-sm-6{
+  margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 .shadow {
   padding: 2em;

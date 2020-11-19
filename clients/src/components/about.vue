@@ -25,7 +25,7 @@ Kollocash has made transaction easier, saver and peaceful. </p>
 
 <style scoped>
 .container{
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 .title{
   margin-top: 5em;

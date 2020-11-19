@@ -138,8 +138,8 @@ export default {
 </script>
 <style scoped>
 .container {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: #e5e5e5 !important;
 }
 .btn-secondary {
@@ -148,20 +148,21 @@ export default {
   border-color: #6c757d;
 }
 input {
-  padding: 2em;
-  margin-top: 0.6em;
+  padding: 1em;
+  margin-top: 0.1em;
   border-color: #640064 !important;
 
 }
 img{
-  height: 100%;
+height: 400px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 img{
   width: 100%;
+  display: none;
   object-fit: cover;
 }
 input {
@@ -172,7 +173,7 @@ input {
 }
 h1{
   margin-top: 1em;
-  font-size: xx-large;
+  font-size: large;
 }
 .container {
   padding-top: 0em;
