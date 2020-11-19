@@ -20,12 +20,18 @@ const routes = [
     path: "/homeboard",
     name: "homeboard",
     component: homeBoard,
+    meta: {
+      requiresAuth: true,
+    },
   },
   ,
   {
     path: "/accountchecked",
     name: "accountchecked",
     component: accountChecked,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: "/redirectpage",
@@ -44,6 +50,9 @@ const routes = [
     path: "/account",
     name: "account",
     component: Account,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: "/signup",

@@ -70,7 +70,7 @@ button{
 }
 
 #nav a{
- color: #640064;
+ color: black;
 }
 button:hover{
   
@@ -87,6 +87,10 @@ button:hover{
   font-weight: bolder;
   font-size: medium;
  
+}
+#nav a{
+ font-size: large;
+ text-align-last: left;
 }
 button[data-v-1f8f859e] {
      padding-right: 1em; 
@@ -105,7 +109,7 @@ button:hover{
 }
 .nav-link {
     display: block;
-     padding: 0em;
+     padding: 0.3em;
 }
 .navbar-light .navbar-toggler {
    

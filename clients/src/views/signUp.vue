@@ -138,8 +138,8 @@ export default {
 </script>
 <style scoped>
 .container {
-  padding-top: 6em;
-  padding-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   background-color: #e5e5e5 !important;
 }
 .btn-secondary {
@@ -165,7 +165,7 @@ img{
   object-fit: cover;
 }
 input {
-  padding: 1em;
+  padding: 0.5em;
   margin-top: 0.3em;
   border-color: #640064 !important;
 

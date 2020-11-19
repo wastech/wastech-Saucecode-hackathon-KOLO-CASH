@@ -87,6 +87,7 @@ export default {
     }
 }).catch(e=>{
    this.$store.commit("login_error",e.response)
+   this.$store.dispatch('setToken', response.data.token)
 })
             },
             
