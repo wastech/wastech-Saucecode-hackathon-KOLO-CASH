@@ -4,7 +4,7 @@ import signUp from '../views/signUp.vue'
 import login from '../views/login.vue'
 import About from '../views/About.vue'
 import homeBoard from "../views/homeBoard.vue";
-import redirectPage from "../views/redirectPage.vue";
+import verifyAccount from "../views/redirectPage.vue";
 import Account from "../views/Account.vue";
 import accountChecked from "../views/accountChecked.vue";
 import store from '../store'
@@ -28,12 +28,9 @@ const routes = [
     component: accountChecked,
   },
   {
-    path: "/redirectpage",
-    name: "redirectpage",
-    component: redirectPage,
-    meta: {
-      requiresAuth: true,
-    },
+    path: "/verifyAccount/:id",
+    name: "verifyAccount",
+    component: verifyAccount,
   },
   {
     path: "/login",

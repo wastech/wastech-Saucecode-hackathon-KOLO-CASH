@@ -121,7 +121,7 @@ export default {
             }
 
   // this.signUp(userInfo)
-  axios.post('/v1/api/user/register',userInfo)
+  axios.post('https://kolo-cash.herokuapp.com/v1/api/user/register',userInfo)
 .then(res=>{
     if (res.data.success) {
          this.$store.commit('register_success',res)

@@ -10,9 +10,8 @@ class userController{
      };
      async verifyAccount(req,res){
       let data =  await userServ.verifyAccount(req,res)
-         // res.json(response(
-         //  'your account has been verified',data,true))
-         res.redirect('/http://localhost:8080/login')
+         res.json(response(
+          'your account has been verified',data,true))
 
        };
   
