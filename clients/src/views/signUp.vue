@@ -158,4 +158,32 @@ img{
   width: 100%;
   object-fit: cover;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+img{
+  width: 100%;
+  object-fit: cover;
+}
+input {
+  padding: 1em;
+  margin-top: 0.3em;
+  border-color: #640064 !important;
+
+}
+h1{
+  margin-top: 1em;
+  font-size: xx-large;
+}
+.container {
+  padding-top: 0em;
+  padding-bottom: 0em;
+  background-color: #e5e5e5 !important;
+}
+form{
+  margin-bottom: 2em;
+}
+h5{
+  font-size: small;
+}
+}
 </style>

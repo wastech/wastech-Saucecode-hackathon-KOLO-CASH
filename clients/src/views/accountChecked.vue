@@ -146,7 +146,7 @@
         <div class="username">
           <h1>Peace’s Account</h1>
         </div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex flex-wrap">
         <div class="txt">
           <h4>Change Profile Picture</h4>
           <span>Choose a new profile picture</span>

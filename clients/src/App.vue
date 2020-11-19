@@ -29,7 +29,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #E5E5E5;
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
 }
 
 #nav {

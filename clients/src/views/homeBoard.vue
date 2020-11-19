@@ -21,7 +21,7 @@
           </h1>
         </div>
 
-        <div class="title mt-5">
+        <div class="title1 ">
           <h4>
             <span class="mr-5"
               ><svg
@@ -129,7 +129,7 @@
       </div>
 
       <div class="col-sm-10">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex flex-wrap">
           <div class="detail">
             <h1>peace</h1>
             <p>good morning! please have a breakfast</p>
@@ -143,7 +143,7 @@
         <div class="card account">
           <span> total saving </span>
 
-          <h3>#0.4455555555555</h3>
+          <h3>#0.00</h3>
         </div>
 
         <div class="started">
@@ -178,6 +178,9 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
+.title1{
+  margin-top: 1em;
+}
 .shadow {
   height: 10em;
   background-color: white;
@@ -193,7 +196,7 @@ h1 {
   background-color: #e5e5e5;
 }
 .title {
-  padding: 1em;
+  padding: 0.5em;
 }
 .title:hover {
   color: #640064;
@@ -216,5 +219,39 @@ h5 {
 }
 .started h1 {
   margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.col-sm-2 {
+  background-color: #640064 !important;
+  height: auto;
+  color: white;
+}
+h1 {
+  margin-top: 0.3em;
+  font-size: x-large;
+}
+h4{
+  margin-top: 0.1em;
+}
+.account {
+  border: 1px solid #640064;
+  max-width: 100%;
+  color: #640064;
+  font-weight: 600;
+  text-align: center;
+  padding: 2em;
+}
+.title {
+  padding: 0.3em;
+}
+.title1{
+  margin-top: 0.5em;
+  font-size: x-small;
+}
+.detail{
+  max-width: 100%;
+}
 }
 </style>

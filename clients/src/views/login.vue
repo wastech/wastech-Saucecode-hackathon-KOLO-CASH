@@ -34,11 +34,11 @@
               </div>
             </div>
           <div class="forgot">
-            <b>forgot password </b>
+            <h3>forgot password </h3>
           </div>
 
             <div class="d-flex justify-content-around">
-              <h3>don't have an account? <span><a href="signup">signup  </a></span> </h3>
+              <h5>don't have an account? <span><a href="signup">signup  </a></span> </h5>
               <button type="submit" class="btn btn-secondary btn-lg btn-lg">
                 login
               </button>
@@ -97,7 +97,7 @@ export default {
 <style scoped>
 .container {
   padding-top: 6em;
-  padding-bottom: 6em;
+  
   background-color: #e5e5e5 !important;
 }
 .btn-secondary {
@@ -109,12 +109,16 @@ h1{
   color: #640064;
   font-weight: 900;
 }
+.d-flex{
+  margin-top: 5em;
+}
 .forgot{
   margin-bottom: 1em;
    color: #640064;
 }
-span{
+#nav a{
   color: #640064;
+  font-size: 2em;
 }
 input {
   padding: 1.5em;
@@ -126,5 +130,35 @@ img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #e5e5e5 !important;
+}
+input {
+  padding: 1em;
+  margin-top: 0.3em;
+    border-color: #640064 !important;
+}
+h5{
+  font-size: small;
+}
+h1{
+  color: #640064;
+  font-weight: bolder;
+  font-size: x-large;
+}
+#nav a{
+  color: #640064;
+  font-size: 1.5em;
+}
+.d-flex{
+  margin-top: 3em;
+}
+
 }
 </style>

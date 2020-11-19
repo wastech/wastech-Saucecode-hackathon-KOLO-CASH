@@ -1,8 +1,8 @@
 <template>
-<div class="hello">
+<div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <a class="navbar-brand">
-      <router-link to="/">myKollo</router-link>
+      <router-link to="/">KolloCash</router-link>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="#">Learn Pal</a>
+        <a class="nav-link" href="#">Loan Pal</a>
       </li>
 
        <li class="nav-item">
@@ -52,7 +52,7 @@ ul {
 }
 
 nav{
-  background-color: #E5E5E5 !important;
+  background-color: #E5E5E5 !important; 
 
 }
 .nav{
@@ -79,6 +79,44 @@ button:hover{
 }
 #nav a.router-link-exact-active {
     color: #640064 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.navbar-brand{
+  font-weight: bolder;
+  font-size: medium;
+ 
+}
+button[data-v-1f8f859e] {
+     padding-right: 1em; 
+     padding-left: 1em; 
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+     border-color:none;
+  
+}
+button:hover{
+  
+    background-color: #E5E5E5 !important;
+    border-color: #E5E5E5;
+   
+}
+.nav-link {
+    display: block;
+     padding: 0em;
+}
+.navbar-light .navbar-toggler {
+   
+    border-color:#E5E5E5
+}
+*, ::after, ::before {
+    box-sizing:unset; 
+}
+container-fluid{
+  max-width: 100%;
+}
 }
 
 </style>

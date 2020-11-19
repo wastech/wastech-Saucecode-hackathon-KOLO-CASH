@@ -3,16 +3,16 @@
  <div  class="container-fluid">
   <div class="row">
     <div class="col">
-      <h1>myKollo</h1>
+      <h1>KolloCash</h1>
     </div>
     <div class="col">
-      <h3>Start a Goal</h3>
+      <h5>StartaGoal</h5>
     </div>
     <div class="col">
-    <h3>FAQ</h3>
+    <h5>FAQ</h5>
     </div>
     <div class="col">
-    <h3> Learn </h3>
+    <h5> Learn </h5>
     </div>
     <div class="col">
       icons
@@ -25,11 +25,29 @@
 <style  scoped>
 .main{
   background-color: #2C022C !important;
-  padding: 3em;
+  padding: 1em;
   color: white;
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.main{
+  background-color: #2C022C !important;
+  padding: 0.3em;
+  color: white;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+h5{
+  font-size: small;
+}
+h1{
+  font-size: medium;
+}
 }
 </style>
