@@ -73,7 +73,8 @@ export default {
             }
 
   // this.signUp(userInfo)
-  axios.post('http://localhost:24434/v1/api/user/login',userInfo)
+  // axios.post('http://localhost:24434/v1/api/user/login',userInfo)
+  axios.post('https://kolo-cash.herokuapp.com/v1/api/user/login',userInfo)
 .then(res=>{
     if (res.data.success) {
                 const refreshToken = res.data.data.refreshToken;

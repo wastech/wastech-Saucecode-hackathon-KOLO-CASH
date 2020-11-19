@@ -1,14 +1,41 @@
 <template>
   <main>
     <div>
-      <h4>A confirmation link was sent to your email address</h4>
-      <div class="button">
-        <button type="button" class="btn btn-lg">go to mail app</button>
-      </div>
+
     </div>
   </main>
 </template>
+<script>
+import axios from 'axios'
+export default {
+  data(){
+    return{
+      message:'',
+      
 
+    }
+  },
+  methods:{
+
+  },
+  created(){
+  axios.get(`https://kolo-cash.herokuapp.com/v1/api/user/verifyAccount/${this.$route.params.id}`)
+.then(res=>{
+    if (res.data.success) {
+                // this.$store.commit('login_success',res)
+   this.message=res.data.message || ' your account has been verified'
+
+    }
+}).catch(e=>{
+   this.$store.commit("login_error",e.response)
+                   this.$router.push('/login')
+
+})
+
+
+}
+}
+</script>
 <style scoped>
 .btn {
   background-color: #640064;
@@ -26,7 +53,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-h4 {
+h2 {
   color: black;
 
   font-weight: 900;

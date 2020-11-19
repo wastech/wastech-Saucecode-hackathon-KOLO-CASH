@@ -35,8 +35,8 @@ class userServices{
                  phoneNumber:phone_number,     
                 }
    const token = jwt.sign(payload, process.env.jwtSecret, {expiresIn: config.accessTokenexpires_expiresIn});
-   const  localVerificationlink =` http://localhost:24434/v1/api/user/verifyAccount/${token}`;
-   const verificationlink =  `https://mykolo.com/v1/api/user/verifyAccount/${token}`;
+   const  localVerificationlink =` http://localhost:8080/verifyAccount/${token}`;
+   const verificationlink =  `https://${req.hostname}/verifyAccount/${token}`;
  console.log(localVerificationlink)
  await new Email(req.body, verificationlink).verify_email();
  await new Email(req.body, localVerificationlink).verify_email();
@@ -81,13 +81,11 @@ user = _.pick(user, [
    };
 
    async verifyAccount(req,res){
-     console.log(config.accessTokenexpires_expiresIn)
      const userId = req.params.userId;
      let ifExp = jwt.decode(userId)
      let verifyJwt = jwt.verify(userId,config.JwtStrategy)
-     console.log(verifyJwt)
      let isvalid = await User.findOne({email:verifyJwt.email})
-     if(isvalid) throw new CustomError('link expired or link has been used',400)
+     if(isvalid) throw new CustomError('link has been used',400)
      let {lastName,firstName,email,password,phoneNumber} = verifyJwt
       let saveUser = new User({email,password,firstName,lastName,phoneNumber});
   saveUser.isEmailVerified=true;

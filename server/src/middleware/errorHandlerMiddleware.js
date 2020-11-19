@@ -17,6 +17,9 @@ app.use((error, req, res, next) => {
         case error instanceof CustomError :
             res.status(error.status).json(response( error.message, null,false))
             break;
+            case error.message == 'jwt malformed' :
+                res.status(400).json(response( 'invalid token, please make use  the right link', null,false))
+                break;
         case error.name == 'SyntaxError' :
             res.status(400).json(response( error.message, null,false))
             break;
@@ -27,10 +30,10 @@ app.use((error, req, res, next) => {
        case error.message == 'getaddrinfo ENOTFOUND smtp.gmail.com' || error.message =='getaddrinfo ENOTFOUND api.paystack.co':
             res.status(400).json(response( 'please check your internet connection ', null,false))
             break;
-            
-        case error.message == 'Request failed with status code 404' :
-            res.status(400).json(response( error, null,false))
-            break;
+       
+            case error.message == 'Request failed with status code 404' :
+                res.status(400).json(response( error, null,false))
+                break;
          case error.name == 'CastError' :
             res.status(400).json(response( "Invalid ID", null,false))
             break;    
