@@ -2,7 +2,7 @@
 <div class="main">
   <div class="container-fluid">
     <div class="header">
-      <h1>Why myKollo?</h1>
+      <h1>Why KolloCash?</h1>
     </div>
   <div class="row">
     <div class="col-sm-6" v-for="item in items" :key="item.id">
@@ -40,7 +40,7 @@ export default {
 <style  scoped>
 .container-fluid{
   margin-top: 5em;
-  max-width: 80%;
+  max-width: 100%;
    margin-bottom: 5em;
     padding-bottom: 7em;
  
@@ -49,6 +49,9 @@ export default {
   padding: 4em;
   background-color: white;
   
+}
+p{
+  font-size: large;
 }
 .col-sm-6{
   margin-top: 1.5em;
@@ -71,5 +74,39 @@ h1{
   text-align: center;
   font-weight: bolder;
   
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.container-fluid{
+ 
+  max-width: 100%;
+   margin-bottom: 2em;
+    padding-bottom: 2em;
+ 
+}
+.shadow {
+  padding: 2em;
+  background-color: white;
+  
+}
+.col-sm-6{
+  margin-top: 1em;
+}
+.title{
+  color:#640064;
+   margin-bottom: 0.5em;
+   font-weight: bolder;
+   font-size: large;
+
+}
+h1{
+  color:#640064;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  
+}
 }
 </style>

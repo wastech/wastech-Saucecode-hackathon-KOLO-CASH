@@ -15,9 +15,8 @@
           <p>
           
            Selling on credit or loaning out my cash to friends as never
-been a a good option because I have to always deal with the
-headache of timely retrievals and reminder.
-Kollocash has made transaction easier , saver and peaceful. </p>
+been a a good option because I always deal with the untimely retrievals.
+Kollocash has made transaction easier, saver and peaceful. </p>
         </div>
       </div>
     </div>
@@ -37,15 +36,36 @@ p{
   color: black;
   font-size: 1.4em;
 }
-.text {
-  
 
-}
 img{
   max-width: 95%;
   width: 100%;
 
 object-fit: cover;
 
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.container{
+  margin-bottom: 2em;
+}
+img{
+   margin-top: 3em;
+  max-width: 100%;
+  width: 100%;
+
+object-fit: cover;
+
+}
+.title{
+  margin-top: 1em;
+  font-size: medium;
+}
+p{
+ 
+  width: 100%;
+  color: black;
+  font-size: medium;
+}
 }
 </style>

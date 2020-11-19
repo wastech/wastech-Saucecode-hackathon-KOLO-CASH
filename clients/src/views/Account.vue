@@ -3,7 +3,7 @@
     <div class="row mt-5 mb-5">
       <div class=" clx col-sm-2">
         <div class="title">
-          <h1>
+          <h3>
             <span class="mr-5"
               ><svg
                 width="1em"
@@ -18,7 +18,7 @@
                   d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
                 /></svg></span
             >myKollo
-          </h1>
+          </h3>
         </div>
 
         <div class="title mt-5">
@@ -133,7 +133,7 @@
               ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eject" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H1.656C.78 9.5.326 8.455.926 7.816L7.27 1.047zM14.346 8.5L8 1.731 1.654 8.5h12.692zM.5 11.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1v-1zm14 0h-13v1h13v-1z"/>
 </svg></span
-            >Account
+            >logout
           </h4>
         </div>
 
@@ -146,7 +146,7 @@
         <div class="username">
           <h1>Peace’s Account</h1>
         </div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex flex-wrap">
         <div class="txt">
           <h4>Change Profile Picture</h4>
           <span>Choose a new profile picture</span>
@@ -197,7 +197,7 @@
   </div>
 <div class="button">
 
-<button type="button" class="btn btn-secondary mt-3">Secondary</button>
+<button type="button" class="btn btn-secondary mt-3">Save Changes</button>
 
 </div>
 
@@ -237,14 +237,14 @@ input{
 .col-sm-3 {
   margin-right: 2em;
 }
-h1 {
+h3 {
   margin-top: 1em;
 }
 .col-sm-10 {
   background-color: #e5e5e5;
 }
 .title {
-  padding: 1em;
+  padding: 0.1em;
 }
 label{
   font-size: 1.2em;
