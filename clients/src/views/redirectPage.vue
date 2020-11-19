@@ -1,12 +1,7 @@
 <template>
   <main>
     <div>
-      <h2>{{message}}</h2>
-      dcrgfjgkg
 
-      <div @click="ll" class="button">kjhgf
-
-      </div>
     </div>
   </main>
 </template>
@@ -21,21 +16,7 @@ export default {
     }
   },
   methods:{
-  ll(){
-      axios.get(`https://kolo-cash.herokuapp.com/v1/api/user/verify_Account/${this.$route.params.id}`)
-.then(res=>{
-    if (res.data.success) {
-                // this.$store.commit('login_success',res)
-   this.message=res.data.message || ' your account has been verified'
 
-    }
-}).catch(e=>{
-  //  this.$store.commit("login_error",e.response)
-   this.message=e.response.data.message || 'token has expired'
-})
-
-
-  }
   },
   created(){
   axios.get(`https://kolo-cash.herokuapp.com/v1/api/user/verifyAccount/${this.$route.params.id}`)
@@ -46,8 +27,9 @@ export default {
 
     }
 }).catch(e=>{
-  //  this.$store.commit("login_error",e.response)
-   this.message=e.response.data.message || 'token has expired'
+   this.$store.commit("login_error",e.response)
+                   this.$router.push('/login')
+
 })
 
 
