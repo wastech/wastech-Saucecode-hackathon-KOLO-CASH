@@ -38,8 +38,8 @@
   </div>
 
 <div class="border">
-  <h2>Total Saving</h2>
-  <h2>#0.00</h2>
+  <h3>Total Saving</h3>
+  <h3>#0.00</h3>
 </div>
 
  <div class="getStarted">
@@ -48,7 +48,7 @@
 
 
       <div class="container row">
-        <div class=" shadow col-sm-3  col-xs-12 hey">
+        <div class=" shadow col-sm-3  hey">
           <h5> Fund Your Account</h5></div>
          <div class="shadow col-sm-3 col-xs-12 hey1">
            <h5>
@@ -83,6 +83,7 @@
   height: 7em;
   width: 70%;
   color: white;
+  margin-top: 4em;
   
  
  
@@ -114,8 +115,8 @@ img{
   padding: 0em;
 }
 .getStarted{
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  
 }
 .fas, .far{
   color: white;

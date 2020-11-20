@@ -36,6 +36,7 @@
 </template>
 
 <script>
+
 export default {
   data(){
     return{
@@ -57,7 +58,7 @@ button{
   padding-left: 0em;
 }
 h1{
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 900;
  margin-bottom: 0.6em;
   line-height: 30.6px;

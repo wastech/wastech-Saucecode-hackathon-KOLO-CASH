@@ -42,7 +42,8 @@
 }
 
 .container-fluid{
-  max-width: 90%;
+  max-width: 100%;
+  width: 100%;
   margin-top: 1em;
 }
 @media only screen and (max-width: 768px) {
@@ -55,6 +56,7 @@
    left: 0;
    bottom: 0;
    width: 100%;
+     max-width: 100%;
 }
 .col-2{
   text-align: left;

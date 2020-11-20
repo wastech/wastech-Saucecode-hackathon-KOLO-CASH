@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="row mt-5 mb-5">
+    <div class="row mt-1 mb-1">
      
         
 <div class="col-sm-3 clx">
@@ -84,7 +84,7 @@ import adminSideBar from '@/components/adminSideBar.vue'
 export default {
   components:{
     adminSideBar
-  }
+  },
 }
 </script>
 

@@ -9,15 +9,15 @@
     </button>
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="nav ">
-      <li class="nav-item active  ">
+      <li class="nav-item active  " v-if="isLoggedIn">
         <a class="nav-link" href="#">Track Payment <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Fund myKollo</a>
+      <li class="nav-item" v-if="isLoggedIn">
+        <a class="nav-link" href="#" >Fund myKollo</a>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="#">Loan Pal</a>
+        <a class="nav-link" href="#" v-if="isLoggedIn" >Loan Pal</a>
       </li>
 
        <li class="nav-item">
@@ -35,8 +35,13 @@
 </template>
 
 <script>
+import {mapGetters, mapActions} from "vuex"
 export default {
- 
+ created(){
+ },
+ computed:{
+   ...mapGetters(["isLoggedIn"])
+ },
 }
 </script>
 

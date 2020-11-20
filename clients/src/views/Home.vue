@@ -28,3 +28,15 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home{
+  max-width: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+ .home{
+  max-width: 100%;
+  width: 100%;
+}
+}
+</style>
