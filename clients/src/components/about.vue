@@ -47,7 +47,7 @@ object-fit: cover;
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 .container{
-  margin-bottom: 10em;
+  margin-bottom: 1em;
 }
 img{
    margin-top: 3em;

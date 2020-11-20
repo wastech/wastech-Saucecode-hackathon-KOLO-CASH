@@ -51,8 +51,7 @@
   background-color: #2C022C !important;
   padding: 0em;
   color: white;
-   
-   position: fxed;
+ position: unset;
    left: 0;
    bottom: 0;
    width: 100%;
