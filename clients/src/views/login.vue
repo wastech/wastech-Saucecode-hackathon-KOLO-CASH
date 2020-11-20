@@ -99,9 +99,10 @@ export default {
 
 <style scoped>
 .container {
-  padding-top: 2em;
+  padding-top: 5em;
+ 
   
-  background-color: #e5e5e5 !important;
+ 
 }
 .btn-secondary {
   color: #fff;
@@ -142,7 +143,7 @@ img{
 .container {
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: #e5e5e5 !important;
+ 
 }
 img{
   height: 300px;

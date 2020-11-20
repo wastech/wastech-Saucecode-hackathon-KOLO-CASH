@@ -16,7 +16,7 @@
         </button>
       </div>
         <div class="col-4">
-<button type="button" class="btn  btn-lg btn-block" >
+<button type="button" class="btn btnc  btn-lg btn-block" >
   <a href="signup">Signup For Free </a></button>
   </div>
   </div>
@@ -74,17 +74,20 @@ p{
   font-size: 1.3em;
   font-weight: 100;
 }
-.btn-secondary {
+.btn {
     color: #fff;
-    border-color: #6c757d;
+    border-color: #640064;
 }
-.btn-outline-secondary:hover{
-  background-color: white;
+button:hover{
+  background-color: #640064 ;
+  color: white !important;
   
 }
-a:hover{
-  
-  color: white;
+
+#nav a:hover {
+    font-weight: bold;
+    color: white;
+    font-size: 0.8em;
 }
 a{
   font-size: 0.5em;
@@ -104,9 +107,9 @@ object-fit: contain;
   max-width: 100%;
 }
 button{
-  padding: 0.3em;
+  padding: 0.4em;
   
-    font-weight: small;
+  
 }
 .col-6{
   text-align: left;
@@ -121,12 +124,13 @@ h1{
   color: #640064 !important;
 }
 a{
-  font-size: 0.4em;
+  font-size: 7.3px;
   
 }
 p{
   font-size: 1em;
   font-weight: 100;
+  color: black;
 }
 img{
   max-width: 100%;

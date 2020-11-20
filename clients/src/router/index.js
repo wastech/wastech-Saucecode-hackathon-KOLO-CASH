@@ -7,6 +7,7 @@ import homeBoard from "../views/homeBoard.vue";
 import verifyAccount from "../views/redirectPage.vue";
 import Account from "../views/Account.vue";
 import accountChecked from "../views/accountChecked.vue";
+import trackPayment from "../views/trackPayment.vue";
 import store from '../store'
 
 
@@ -20,6 +21,14 @@ const routes = [
     path: "/homeboard",
     name: "homeboard",
     component: homeBoard,
+    meta: {
+      requiresAuth: true,
+    },
+  },
+  {
+    path: "/trackpayment",
+    name: "trackpayment",
+    component: trackPayment,
     meta: {
       requiresAuth: true,
     },

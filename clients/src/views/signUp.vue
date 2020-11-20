@@ -140,7 +140,7 @@ export default {
 .container {
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: #e5e5e5 !important;
+ 
 }
 .btn-secondary {
   color: #fff;
@@ -178,7 +178,7 @@ h1{
 .container {
   padding-top: 0em;
   padding-bottom: 0em;
-  background-color: #e5e5e5 !important;
+
 }
 form{
   margin-bottom: 2em;

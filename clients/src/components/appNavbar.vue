@@ -52,7 +52,7 @@ ul {
 }
 
 nav{
-  background-color: #E5E5E5 !important; 
+  background-color: #FCFBFC !important; 
 
 }
 .nav{
@@ -65,7 +65,7 @@ button{
 }
 .navbar-brand{
   font-weight: bolder;
-  font-size: large;
+  font-size: xx-large;
  
 }
 

@@ -1,24 +1,32 @@
 <template>
 <div class="main">
- <div  class="container">
+ <div  class="container-fluid">
   <div class="row">
-    <div class="col">
+    <div class="col-2 ">
       <h3>KolloCash</h3>
     </div>
-    <div class="col">
-      <h5>StartaGoal</h5>
-    </div>
-    <div class="col">
-    <h5>FAQ</h5>
-    </div>
-    <div class="col">
-    <h5> Learn </h5>
-    </div>
-    <div class="col">
-      icons
-    </div>
+
+<div class="col-8">
+  <div class="row">
+    <div class="col-sm-3"><span>Track Payment</span></div>
+     <div class="col-sm-3"><span>Fund my kollo</span></div>
+      <div class="col-sm-2"><span>Loan Pal</span></div>
+       <div class="col-sm-2"><span>FAQ</span></div>
+       <div class="col-sm-2"><span>Learn</span></div>
   </div>
-  </div>
+</div>
+
+
+   
+    <div class="col-1">
+     <div class="row">
+       <div class="col-sm-3"><i class="fab fa-facebook-f"></i></div>
+      <div class="col-sm-3"><i class="fab fa-twitter"></i></div>
+       <div class="col-sm-3"><i class="fas fa-home"></i></div>
+     </div>
+    </div>
+     </div>
+ </div>
 </div>
 </template>
 
@@ -32,19 +40,49 @@
    bottom: 0;
    width: 100%;
 }
+
+.container-fluid{
+  max-width: 90%;
+  margin-top: 1em;
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 .main{
   background-color: #2C022C !important;
-  padding: 0.3em;
+  padding: 0em;
   color: white;
-   position: fixed;
+   
+   position: fxed;
    left: 0;
    bottom: 0;
    width: 100%;
 }
-h5{
-  font-size: small;
+.col-2{
+  text-align: left;
+  margin-top: 3em;
+}
+.col-8{
+  text-align: center;
+  padding: 0em;
+}
+.col-1{
+  text-align: center;
+  margin-top: 2em;
+}
+.fas{
+  margin-bottom: 1em;
+}
+.container-fluid{
+  max-width: 100%;
+}
+.row{
+  padding: 0.1em;
+}
+
+
+h3{
+  font-size: large;
+  font-weight: bolder;
 }
 h1{
   font-size: medium;
