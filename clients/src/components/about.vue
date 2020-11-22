@@ -50,7 +50,7 @@ object-fit: cover;
   margin-bottom: 1em;
 }
 img{
-   margin-top: 3em;
+   margin-top: 0.5em;
   max-width: 100%;
   width: 100%;
 

@@ -1,12 +1,12 @@
 <template>
 <div class="main">
- <div  class="container-fluid">
+ <div  >
   <div class="row">
-    <div class="col-2 ">
+    <div class="col-3 ">
       <h3>KolloCash</h3>
     </div>
 
-<div class="col-8">
+<div class="col-7">
   <div class="row">
     <div class="col-sm-3"><span>Track Payment</span></div>
      <div class="col-sm-3"><span>Fund my kollo</span></div>
@@ -49,7 +49,7 @@
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 .main{
-  background-color: #2C022C !important;
+ 
   padding: 0em;
   color: white;
  position: unset;
@@ -58,11 +58,14 @@
    width: 100%;
      max-width: 100%;
 }
-.col-2{
+.row{
+ background-color: #2C022C !important;
+}
+.col-3{
   text-align: left;
   margin-top: 3em;
 }
-.col-8{
+.col-7{
   text-align: center;
   padding: 0em;
 }
@@ -82,7 +85,7 @@
 
 
 h3{
-  font-size: large;
+  font-size: small;
   font-weight: bolder;
 }
 h1{

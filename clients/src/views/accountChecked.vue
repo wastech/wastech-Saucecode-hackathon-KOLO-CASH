@@ -3,7 +3,7 @@
     <div class="row mt-5 mb-5">
      
         
-<div class="col-sm-3 clx">
+<div class="col-sm-2 clx">
   <adminSideBar/>
 </div>
 

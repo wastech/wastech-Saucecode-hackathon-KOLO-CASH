@@ -1,11 +1,11 @@
 <template>
    <div class="main">
         <div class="title">
-      <h3> <i class="fas fa-bars"></i>  kolloCash</h3>
+      <h3> <i class="fas fa-bars"></i> <a href="/">  kolloCash </a></h3>
       </div>
 
       <div class="list">
-        <p> <i class="fas fa-home"></i>Home </p>
+        <p> <i class="fas fa-home">  </i> <a href="/">  Home</a> </p>
         <p> <i class="fas fa-route"></i>Start a Goal</p>
         <p> <i class="fas fa-funnel-dollar"></i>Fund a Goal</p>
        
@@ -25,6 +25,16 @@
 h5{
   margin-top: 6em;
   text-align: center;
+}
+#nav a:hover{
+  color:#640064;
+  background-color: white;
+  padding: 0.8em;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+#nav a{
+  color: white;
 }
 
 .title {

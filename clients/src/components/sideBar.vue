@@ -37,7 +37,7 @@ h5{
 .title {
   color: white;
   text-align: left;
-  margin-left: 2em;
+  margin-left: 1em;
   margin-top: 2em;
   padding: 0em;
 }
@@ -46,12 +46,26 @@ h5{
   color: white;
   margin-right: 1.5em;
 }
+h3{
+  font-size: large;
+}
+
 .list{
   color: white;
   text-align: left;
-  margin-top: 1em;
-   margin-left: 2em;
+  margin-top: 2em;
+   margin-left: 1em;
    padding: 0em;
+   font-size: small;
+   font-weight: 600;
+}
+.logout{
+   color: white;
+  text-align: left;
+  margin-top: 2em;
+   margin-left: 0.3em;
+   padding: 0em;
+   font-size: large;
 }
 
 </style>
