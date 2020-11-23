@@ -1,93 +1,56 @@
 <template>
-  <div class="main">
-    <div class="row">
-      <div class="hello col-sm-2">
-       <sb/>
-      </div>
-
-      <div class="col-sm-9">
-        <div class="container row">
-          <div class="col-auto mr-auto">
-            <div class="name">
-              <h1>{{user.firstName}}   {{user.lastName}}</h1>
-              <span>good morning, please have a breakfast</span>
-            </div>
-          </div>
-          <div class="col-auto">
-            <div class="image">
-              <img :src="user.photoURL" alt="your profile picture" />
-              
-            </div>
-          </div>
+      <div class="main">
+        <div class="title">
+          <h2><i class="fas fa-bars"></i> <a href="/"> kolloCash</a></h2>
         </div>
 
-        <div class="border">
-          <h3>Total Saving</h3>
-          <h3>#0.00</h3>
+        <div class="list">
+          <p><i class="fas fa-home"></i> <a href="/"> Home </a></p>
+          <p>
+            <i class="fas fa-route"></i>
+            <a href="trackpayment">Track Payments</a>
+          </p>
+          <p>
+            <i class="fas fa-funnel-dollar"></i>
+            <a href="trackpayment">Fund myKollo Link</a>
+          </p>
+          <p>
+            <i class="fas fa-receipt"></i>
+            <a href="trackpayment">Loan a Friend</a>
+          </p>
+          <p><i class="far fa-user"></i> <a href="account"> Account</a></p>
         </div>
 
-        <div class="getStarted">
-          <h1>Get Started</h1>
+        <div class="logout " @click="logOut">
+          <p ><i class="fas fa-sign-out-alt" ></i> Logout</p>
         </div>
-
-        <div class="container row ss">
-          <div class="shadow col-sm-3 hey">
-            <h5>Fund Your Account</h5>
-          </div>
-          <div class="shadow col-sm-3 col-xs-12 hey1">
-            <h5>Track Payments</h5>
-          </div>
-          <div class="shadow col-sm-3 col-xs-12 hey2">
-            <h5>Fund myKollo Link</h5>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </template>
+
 <script>
 import {mapGetters, mapActions} from "vuex"
 
-import sb from "../components/sb"
-import axios from "axios"
 export default {
   data(){
     return{
-        user:{
-          email:'',
-          firstName:'',
-          lastName:'',
-          photoURL:'',
-          phoneNumber:""
-        }
+
     }
   },
-  methods:{
+    methods:{
    ...mapActions(["signOut"]),
 logOut(){
 this.signOut()
+.then(res=>{
+                this.$router.push('/login')
+}).catch(e=>{
+console.log(e)
+
+})
+// console.log('done')
 }
 },
-  components:{
-    sb
-  },
-  created(){
-      axios.get(`https://kolo-cash.herokuapp.com/v1/api/user/getProfile`)
-      .then(res=>{
-        let data = res.data.data
-        this.user.firstName=data.firstName
-        this.user.photoURL=data.photoURL
-        this.user.email=data.email
-        this.user.lastName=data.lastName
-        this.user.phoneNumber=data.phoneNumber
-      })
-      .catch(e=>{
-        console.log(e.response.data)
-      })
-  }
 }
 </script>
-
 <style scoped>
 .hello {
   background-color: #640064;
@@ -226,9 +189,6 @@ h1{
   width: 100%;
   color: white;
   margin-top: 1em;
- 
-  
- 
  
 }
 .ss{

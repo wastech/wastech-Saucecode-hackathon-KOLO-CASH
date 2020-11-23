@@ -16,6 +16,9 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      requiresGuest: true,
+    },
   },
   {
     path: "/homeboard",
@@ -40,17 +43,23 @@ const routes = [
     component: accountChecked,
     meta: {
       requiresAuth: true,
-    },
+    }
   },
   {
     path: "/verifyAccount/:id",
     name: "verifyAccount",
     component: verifyAccount,
+    meta: {
+      requiresGuest: true,
+    }
   },
   {
     path: "/login",
     name: "login",
     component: login,
+    meta: {
+      requiresGuest: true,
+    }
   },
   {
     path: "/account",
@@ -64,11 +73,17 @@ const routes = [
     path: "/signup",
     name: "signup",
     component: signUp,
+    meta: {
+      requiresGuest: true,
+    }
   },
   {
     path: "/about",
     name: "About",
     component: About,
+    meta: {
+      requiresGuest: true,
+    }
   },
 ];
 
@@ -85,10 +100,19 @@ router.beforeEach((to,from,next)=>{
     }else{
         next();
     }
+    }else if(to.matched.some(record=>record.meta.requiresGuest)){
+      if(store.getters.isLoggedIn){
+        next("/homeboard")
+    
     }else{
+        next();
+    }
+    }
+    else{
         next()
         }
 
 })
 
 export default router
+// 

@@ -4,7 +4,7 @@
      
         
 <div class="col-sm-2 clx">
-  <adminSideBar/>
+  <sb/>
 </div>
 
  <!-- form -->
@@ -80,10 +80,10 @@
   </div>
 </template>
 <script>
-import adminSideBar from '@/components/adminSideBar.vue'
+import sb from '@/components/sb.vue'
 export default {
   components:{
-    adminSideBar
+    sb
   },
 }
 </script>

@@ -35,7 +35,7 @@ check back soon.</h2>
   </div>
 </template>
 <script>
-import sideBar from "@/components/sideBar.vue";
+import sideBar from "../components/sb";
 export default {
   components: {
     sideBar,

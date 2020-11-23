@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import Api from '../config/Api'
+import axios from 'axios'
 
 
 export default createStore({
@@ -20,20 +21,24 @@ export default createStore({
   },
   mutations: {
     async signUp({commit},user) {
-      // commit('register_request');
       try{
           let res= await Api().post('/user/register',
       user)
  if (res.data.success !== undefined) {
-    //  commit('register_success',res)
  }
  return res;
       }catch(err){
-    //  commit('register_error',err)
       }
   },
   },
   actions: {
+    async signOut({commit}){
+      await localStorage.removeItem('token')
+      await localStorage.removeItem('refreshToken')
+      commit('signOut')
+      delete   axios.defaults.headers.common['Authorization']
+  return
+  }
   },
   modules: {
   },
