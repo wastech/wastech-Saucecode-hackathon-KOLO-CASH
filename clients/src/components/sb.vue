@@ -36,17 +36,10 @@ export default {
 
     }
   },
-    methods:{
+methods:{
    ...mapActions(["signOut"]),
 logOut(){
 this.signOut()
-.then(res=>{
-                this.$router.push('/login')
-}).catch(e=>{
-console.log(e)
-
-})
-// console.log('done')
 }
 },
 }
