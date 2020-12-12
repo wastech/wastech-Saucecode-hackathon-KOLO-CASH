@@ -65,32 +65,13 @@ export default {
     },
     
     methods:{
-        ...mapActions(['signUp']),
+        ...mapActions(['signIn']),
         SignIn(){
             let userInfo={
                 password:this.password,
                 email:this.email
             }
-
-  // this.signUp(userInfo)
-  // axios.post('http://localhost:24434/v1/api/user/login',userInfo)
-  axios.post('https://kolo-cash.herokuapp.com/v1/api/user/login',userInfo)
-.then(res=>{
-    if (res.data.success) {
-                const refreshToken = res.data.data.refreshToken;
-                const token = res.data.data.token;
-                const user = res.data.data.user;
-                localStorage.setItem('token',token);
-                localStorage.setItem('refreshToken',refreshToken);
-                axios.defaults.headers.common["Authorization"] = token;
-                this.$router.push('/homeboard')
-                this.$store.commit('login_success',res)
-                
-    }
-}).catch(e=>{
-   this.$store.commit("login_error",e.response)
-   
-})
+            this.signIn(userInfo)
             },
             
   }

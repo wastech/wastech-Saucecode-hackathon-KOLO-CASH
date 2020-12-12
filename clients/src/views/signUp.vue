@@ -64,6 +64,17 @@
               </div>
             </div>
             <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Gender</label>
+  <div class=" col-sm-2 form-check form-check-inline">
+  <input class="form-check-input" type="radio" v-model="gender" name="inlineRadioOptions" id="inlineRadio1" value="male">
+  <label class="form-check-label"  for="inlineRadio1">male</label>
+</div>
+<div class=" col-sm-2 form-check form-check-inline">
+  <input class="form-check-input" type="radio" v-model="gender" name="inlineRadioOptions" id="inlineRadio2" value="female">
+  <label class="form-check-label" for="inlineRadio2">female</label>
+</div>
+ </div>
+            <div class="form-group row">
               <div class="col-sm-12">
                 <input
                   type="password"
@@ -105,33 +116,28 @@ export default {
       confirm_password:'',
       password:'',
       phone_number:'',
+      gender:''
     }
     },
     
     methods:{
         ...mapActions(['signUp']),
+        
         SignUp(){
+      console.log(this.gender)
+
             let userInfo={
                 firstName:this.firstName,
                 lastName:this.lastName,
                 confirm_password:this.confirm_password,
                 password:this.password,
                 phone_number:this.phone_number,
-                email:this.email
+                email:this.email,
+                gender:this.gender
             }
 
-  // this.signUp(userInfo)
-  axios.post('https://kolo-cash.herokuapp.com/v1/api/user/register',userInfo)
-.then(res=>{
-    if (res.data.success) {
-         this.$store.commit('register_success',res)
-        // this.$router.push('/redirectpage')
-    console.log(res.data.message)
-    }
-}).catch(e=>{
-   this.$store.commit("register_error",e.response)
-})
-            },
+  this.signUp(userInfo)
+},
             
   }
 }

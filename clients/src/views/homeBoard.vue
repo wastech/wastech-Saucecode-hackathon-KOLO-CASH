@@ -53,37 +53,19 @@ import axios from "axios"
 export default {
   data(){
     return{
-        user:{
-          email:'',
-          firstName:'',
-          lastName:'',
-          photoURL:'',
-          phoneNumber:""
-        }
     }
   },
   methods:{
-   ...mapActions(["signOut"]),
-logOut(){
-this.signOut()
-}
 },
   components:{
     sb
   },
+   computed:{
+        user(){
+            return this.$store.getters.user
+        }
+    },
   created(){
-      axios.get(`https://kolo-cash.herokuapp.com/v1/api/user/getProfile`)
-      .then(res=>{
-        let data = res.data.data
-        this.user.firstName=data.firstName
-        this.user.photoURL=data.photoURL
-        this.user.email=data.email
-        this.user.lastName=data.lastName
-        this.user.phoneNumber=data.phoneNumber
-      })
-      .catch(e=>{
-        console.log(e.response.data)
-      })
   }
 }
 </script>

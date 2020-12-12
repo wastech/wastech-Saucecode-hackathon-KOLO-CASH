@@ -9,13 +9,13 @@
         <div class="container row">
           <div class="col-auto mr-auto">
             <div class="name">
-              <h1>peace,</h1>
+              <h1>{{user.firstName}}  {{user.lastName}}</h1>
               <span>good morning, please have a breakfast</span>
             </div>
           </div>
           <div class="col-auto">
             <div class="image">
-              <img src="@/assets/7.png" alt="" />
+              <img :src="user.photoURL" alt="" />
             </div>
           </div>
         </div>
@@ -36,10 +36,20 @@ check back soon.</h2>
 </template>
 <script>
 import sideBar from "../components/sb";
+import {mapActions} from "vuex";
 export default {
   components: {
     sideBar,
   },
+   methods:{
+},
+computed:{
+        user(){
+            return this.$store.getters.user
+        }
+    },
+  created(){
+  }
 };
 </script>
 
