@@ -22,8 +22,8 @@
         </div>
 
         <div class="border">
-          <h3>Total Saving</h3>
-          <h3>#0.00</h3>
+          <h3>Account balance</h3>
+          <h3>N0.00</h3>
         </div>
 
         <div class="getStarted">
@@ -92,8 +92,9 @@ export default {
   color: white;
   margin-top: 3em;
 }
-h1 {
-  font-size: xxx-large;
+h1.getStartted {
+  font-size:x-large;
+  font-weight: bold;
 }
 h5 {
   margin-top: 4em;
@@ -151,8 +152,11 @@ img {
   margin-top: 1.5em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
-  color: #640064;
+  color: white;
   font-weight: bolder;
+  background-color: #640064;
+  text-align: center;
+  font-size: large;
 }
 p {
   font-size: small;

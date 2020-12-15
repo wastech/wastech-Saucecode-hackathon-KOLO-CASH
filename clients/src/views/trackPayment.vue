@@ -9,7 +9,7 @@
         <div class="container row">
           <div class="col-auto mr-auto">
             <div class="name">
-              <h1>{{user.firstName}}  {{user.lastName}}</h1>
+              <h1>{{ user.firstName }} {{ user.lastName }}</h1>
               <span>good morning, please have a breakfast</span>
             </div>
           </div>
@@ -19,37 +19,36 @@
             </div>
           </div>
         </div>
-        <div class="main1">
-
-           <h2>This section is under construction, 
-check back soon.</h2>
-          <button type="button" class="btn btn-secondary">Return  to Home</button>
        
-        
+
+       <!-- recent activities-->
+      <div class="activities">
+        <h2>Recent activities</h2>
+<div class="d-flex justify-content-around">
+  <p>david attah  </p>
+   <p>just send you</p>
+    <p>N 30000</p>
+</div>
+
+      </div>
       </div>
     </div>
-      </div>
-
-      
-
   </div>
 </template>
 <script>
 import sideBar from "../components/sb";
-import {mapActions} from "vuex";
+import { mapActions } from "vuex";
 export default {
   components: {
     sideBar,
   },
-   methods:{
-},
-computed:{
-        user(){
-            return this.$store.getters.user
-        }
+  methods: {},
+  computed: {
+    user() {
+      return this.$store.getters.user;
     },
-  created(){
-  }
+  },
+  created() {},
 };
 </script>
 
@@ -58,7 +57,6 @@ computed:{
   background-color: #640064;
   height: 30em;
 }
-
 
 img {
   width: 20%;
@@ -80,17 +78,21 @@ img {
   border-bottom-left-radius: 10px;
   margin-top: 1em;
 }
-
-.main1 {
-
-margin-top: 6em;
-  justify-content: left;
-  align-items: center;
+.d-flex{
+  max-width: 40%;
 }
+
+
 h2 {
   color: black;
-max-width: 60%;
+  max-width: 60%;
   font-weight: 900;
+}
+.activities{
+  margin-top: 2em;
+}
+img.media{
+  width: 3em;
 }
 
 .main1 div {
@@ -100,14 +102,10 @@ max-width: 60%;
   padding: 20px;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
- .hello {
-  background-color: #640064;
-  height: 100%;
+  .hello {
+    background-color: #640064;
+    height: 100%;
+  }
 }
-}
-
 </style>
