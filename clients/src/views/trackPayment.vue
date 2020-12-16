@@ -23,12 +23,16 @@
 
        <!-- recent activities-->
       <div class="activities">
-        <h2>Recent activities</h2>
-<div class="d-flex justify-content-around">
-  <p>david attah  </p>
-   <p>just send you</p>
-    <p>N 30000</p>
+        <h5 class="head">Recent activities</h5>
+
+<div class="media position-relative mb-4" v-for="item in items" :key="item.id">
+  <span class="mr-4">{{item.name}}</span>
+  <div class="media-body">
+    <h5 class="mt-0">{{item.activity}}  <code >N {{item.amount}}</code> <span style="color:#006400;">{{item.recieve}}</span></h5>
+  </div>
 </div>
+
+
 
       </div>
       </div>
@@ -41,6 +45,17 @@ import { mapActions } from "vuex";
 export default {
   components: {
     sideBar,
+  },
+  data(){
+    return {
+    items:[
+      {name:'Da', activity:' Aremu just sent you ', recieve:'3000'},
+      {name:'Da', activity:'you just  sent David Attah', amount:'3000'},
+      {name:'Da', activity:'you sent', recieve:'3000'},
+      {name:'Da', activity:'you sent', amount:'3000'},
+      {name:'Da', activity:'you sent', recieve:'3000'}
+    ]
+    }
   },
   methods: {},
   computed: {
@@ -70,6 +85,9 @@ img {
 .col-auto {
   margin-top: 1em;
 }
+code{
+  margin-left: 1em;
+}
 
 .btn {
   background-color: #640064;
@@ -78,18 +96,28 @@ img {
   border-bottom-left-radius: 10px;
   margin-top: 1em;
 }
-.d-flex{
-  max-width: 40%;
+.mt-0, .my-0 {
+    margin-top: 0!important;
+    padding: 0.5em;
+}
+ .mr-4{
+  border-radius: 50%;
+  width: 3.5em;
+  color: white;
+  padding: 1em;
+  background-color: #B600B6;
 }
 
 
-h2 {
-  color: black;
-  max-width: 60%;
-  font-weight: 900;
+.head {
+  color: #858085;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 600;
 }
 .activities{
   margin-top: 2em;
+  margin-left: 1em;
 }
 img.media{
   width: 3em;
