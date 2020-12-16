@@ -8,6 +8,8 @@ import verifyAccount from "../views/redirectPage.vue";
 import Account from "../views/Account.vue";
 import accountChecked from "../views/accountChecked.vue";
 import trackPayment from "../views/trackPayment.vue";
+import fundKollo from "../views/fundKollo.vue";
+import loanFriend from "../views/loanFriend.vue";
 import store from '../store'
 
 
@@ -36,14 +38,28 @@ const routes = [
       requiresAuth: true,
     },
   },
-  ,
+  {
+    path: "/fundkollo",
+    name: "fundkollo",
+    component: fundKollo,
+    meta: {
+      requiresAuth: true,
+    },
+  },
+  {
+    path: "/loanfriend",
+    name: "loanfriend",
+    component: loanFriend,
+    
+  },
+  
   {
     path: "/accountchecked",
     name: "accountchecked",
     component: accountChecked,
     meta: {
       requiresAuth: true,
-    }
+    },
   },
   {
     path: "/verifyAccount/:id",
@@ -51,7 +67,7 @@ const routes = [
     component: verifyAccount,
     meta: {
       requiresGuest: true,
-    }
+    },
   },
   {
     path: "/login",
@@ -59,8 +75,9 @@ const routes = [
     component: login,
     meta: {
       requiresGuest: true,
-    }
+    },
   },
+
   {
     path: "/account",
     name: "account",
@@ -75,7 +92,7 @@ const routes = [
     component: signUp,
     meta: {
       requiresGuest: true,
-    }
+    },
   },
   {
     path: "/about",
@@ -83,7 +100,7 @@ const routes = [
     component: About,
     meta: {
       requiresGuest: true,
-    }
+    },
   },
 ];
 

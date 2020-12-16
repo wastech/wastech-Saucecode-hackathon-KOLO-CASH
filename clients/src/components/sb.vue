@@ -12,11 +12,11 @@
           </p>
           <p>
             <i class="fas fa-funnel-dollar"></i>
-            <a href="trackpayment">Fund myKollo Link</a>
+            <a href="fundkollo">Fund myKollo Link</a>
           </p>
           <p>
             <i class="fas fa-receipt"></i>
-            <a href="trackpayment">Loan a Friend</a>
+            <a href="loanfriend">Loan a Friend</a>
           </p>
           <p><i class="far fa-user"></i> <a href="account"> Account</a></p>
         </div>
