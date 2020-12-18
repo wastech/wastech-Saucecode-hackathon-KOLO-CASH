@@ -42,6 +42,7 @@ export default {
   /* For mobile phones: */
 h3{
     font-size: small;
+    text-align: center;
 }
 }
 </style>

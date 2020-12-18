@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <div class="row">
-      <div class="hello col-sm-2">
-        <sideBar />
+      <div class=" col-sm-3">
+        <sb />
       </div>
 
       <div class="col-sm-9">
@@ -40,11 +40,11 @@
   </div>
 </template>
 <script>
-import sideBar from "../components/sb";
+import sb from "../components/sb";
 import { mapActions } from "vuex";
 export default {
   components: {
-    sideBar,
+    sb,
   },
   data(){
     return {

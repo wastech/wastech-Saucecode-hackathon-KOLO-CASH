@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-  
+  <appNavbar/>
   <firstPage/>
   <how/>
   <about/>
@@ -10,6 +10,7 @@
 
 <script>
 // @ is an alias to /src
+import appNavbar from "@/components/appNavbar"
 import firstPage from '@/components/firstPage.vue'
 import how from '@/components/how.vue'
 import about from '@/components/about.vue'
@@ -24,6 +25,7 @@ export default {
    firstPage,
    how,
    about,
+   appNavbar
   
   }
 }

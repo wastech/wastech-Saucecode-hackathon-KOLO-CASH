@@ -45,6 +45,7 @@ export default {
   /* For mobile phones: */
 h5.error{
     font-size: small;
+    text-align: center;
 }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <div class="row mt-1 mb-1">
+    <div class="row mb-1">
      
         
-<div class="col-sm-2 clx">
+<div class="col-sm-3">
   <sb/>
 </div>
 

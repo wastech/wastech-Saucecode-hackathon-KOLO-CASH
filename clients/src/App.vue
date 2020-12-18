@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-   <appNavbar/>
+   
   <Success  />
   <Error  />
     <router-view/>
@@ -9,7 +9,7 @@
  
 </template>
 <script>
-import appNavbar from "@/components/appNavbar"
+
 import footerApp from "@/components/footerApp"
 import Success from "@/views/success"
 import Error from "@/views/error"
@@ -19,7 +19,7 @@ import {mapActions} from "vuex";
 
 export default {
   components:{
-    Success,Error, appNavbar, footerApp
+    Success,Error, footerApp
   },
   methods:{
     

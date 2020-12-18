@@ -3,12 +3,12 @@
     <div class="row mt-5 mb-5">
      
         
-<div class="col-sm-2 clx">
-  <adminSideBar/>
+<div class="col-sm-3">
+  <sb/>
 </div>
 
  <!-- form -->
-      <div class="col-sm-8">
+      <div class="col-sm-9">
 
         <div class="username">
           <h1>Peace’s Account</h1>
@@ -80,10 +80,10 @@
   </div>
 </template>
 <script>
-import adminSideBar from '@/components/adminSideBar.vue'
+import sb from '@/components/sb.vue'
 export default {
   components:{
-    adminSideBar
+    sb
   }
 }
 </script>

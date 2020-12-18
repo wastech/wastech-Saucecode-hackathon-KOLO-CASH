@@ -45,9 +45,13 @@ this.signOut()
 }
 </script>
 <style scoped>
-.hello {
-  background-color: #640064;
-  height: 34em;
+.main {
+  background-color: #640064 !important;
+  height: 45em;
+  margin-top: -3.9em;
+  position: fixed;
+  max-width: 22%;
+  width: 100%;
 }
 .hey {
   background-color: #875019;
@@ -66,9 +70,7 @@ this.signOut()
   color: white;
   margin-top: 3em;
 }
-h1 {
-  font-size: xxx-large;
-}
+
 h5 {
   margin-top: 4em;
   text-align: center;
@@ -88,9 +90,15 @@ img {
 .title {
   color: white;
   text-align: left;
-  margin-left: 2em;
-  margin-top: 2em;
+  margin-left: 1.5em;
+ 
   padding: 0em;
+ 
+}
+h2{
+ font-weight: bold;
+  font-size: xx-large;
+   margin-top: 2em;
 }
 .getStarted {
   margin-top: 1em;
@@ -98,7 +106,7 @@ img {
 .fas,
 .far {
   color: white;
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 #nav a:hover {
   color: #640064;
@@ -109,6 +117,9 @@ img {
 }
 #nav a {
   color: white;
+  font-size: large;
+  font-weight: 500;
+  
 }
 
 .list {
@@ -131,9 +142,7 @@ img {
 p {
   font-size: small;
 }
-h2 {
-  font-size: large;
-}
+
 .logout {
   color: white;
   text-align: left;

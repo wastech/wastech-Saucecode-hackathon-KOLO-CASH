@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="row">
-      <div class="hello col-sm-2">
+      <div class=" col-sm-3">
        <sb/>
       </div>
 
@@ -41,6 +41,35 @@
             <h5>Fund myKollo Link</h5>
           </div>
         </div>
+        
+ <div class="recentActivities mb-5">
+  
+<h3 class="head">
+        Recent activities
+        </h3>
+ <div class="recentb">
+        <div class="d-flex justify-content-between ">
+ <span class="shortname">Da</span>
+ <h6 class="mt-2"> aremu is  is asking for a loan</h6>
+ <span type="" class="view  mt-2" style="color:#006400; font-weight:bold;">view</span>
+ <span type="" class="delete mt-2"  style="color:#CB3939; font-weight:bold;" >delete</span>
+
+        </div>
+          <div class="d-flex justify-content-between ">
+ <span class="shortname">Da</span>
+ <h6 class="mt-2"> aremu is  is asking for a loan</h6>
+ <span type="" class="view  mt-2" style="color:#006400; font-weight:bold;">view</span>
+ <span type="" class="delete mt-2"  style="color:#CB3939; font-weight:bold;" >delete</span>
+
+        </div>
+          <div class="d-flex justify-content-between ">
+ <span class="shortname">Da</span>
+ <h6 class="mt-2"> aremu is  is asking for a loan</h6>
+ <span type="" class="view  mt-2" style="color:#006400; font-weight:bold;">view</span>
+ <span type="" class="delete mt-2"  style="color:#CB3939; font-weight:bold;" >delete</span>
+
+        </div>
+ </div></div>
       </div>
     </div>
   </div>
@@ -71,10 +100,25 @@ export default {
 </script>
 
 <style scoped>
-.hello {
-  background-color: #640064;
-  height: 34em;
+.recentActivities{
+  
 }
+.shortname{
+  background-color: #640064;
+  padding: 0.5em;
+  border-radius: 50%;
+  color: white;
+}
+.recentb {
+ border: 2px solid #000000;
+ 
+  
+}
+.d-flex{
+ max-width: 60%;
+ margin-top: 1em;
+}
+
 .hey {
   background-color: #875019;
 }
@@ -169,6 +213,12 @@ h2 {
   text-align: left;
   margin-top: 4em;
   margin-left: 2em;
+}
+.head{
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: x-large;
+  color: #858085;
 }
 
 @media only screen and (max-width: 768px) {

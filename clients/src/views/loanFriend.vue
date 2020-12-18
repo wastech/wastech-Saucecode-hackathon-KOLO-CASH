@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="row">
-      <div class="hello col-sm-2">
+      <div class=" col-sm-3">
         <sb />
       </div>
 
